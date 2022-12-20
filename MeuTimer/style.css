@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --font-color: hsla(240, 6%, 21%, 1);
+
+  --bt-bg: hsla(240, 9%, 89%, 1);
+  --bt-bg-2: hsla(194, 97%, 31%, 1);
+  --bt-bg-hover: hsla(194, 97%, 31%, 1);
+  font-size: 62.5%;
+
+
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+
+  line-height: 14.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.backgroundForest {
+  background-image: url(https://pixabay.com/get/g321caf47c2e6a86063168b7ce08cd90b71bf841e5656bc290a2ef39ebedaa78498a2882e34ea87641599d89f26734ccde1d0006166f7ebab2f4704bac5741c50_1920.jpg?attachment=);
+  
+
+}
+
+.backgroundRain {
+  background-image: url(https://pixabay.com/get/gbbd7393521deb70ea8ba2c19782b780f841b7af8a6c39e6ddd1197edaf74fd45d5c57e801f2c8bf77d174d154fd9fd9d_1920.jpg?attachment=);
+
+}
+
+.backgroundCafeteria {
+  background-image: url(https://pixabay.com/get/g39f054d2c42c51ca7afb89baac9359c05ec95210e2cb1164bf5def8ed30391a0b5f476b91c96965ea5dde0b174a15d985946d39a3e0b3e8b636b33e7f9f7a331_1920.jpg?attachment=);
+
+}
+
+.backgroundFireplace {
+  background-image: url(https://pixabay.com/get/ge4ecd78542d64ee34f0a5aa5e6c9f8a33176fc52d207a8248c8ea43346eaccc052c57d39ca45e8019c5567fc5b08c73182f8f0e6b517f69f03d25d1a6a0e1540_1920.jpg?attachment=);
+}
+
+button {
+  border: none;
+  background: none;
+  
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#mood button {
+  padding: 4.8rem;
+  border-radius: 2.4rem;
+
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+.forest,
+.rain,
+.cafeteria,
+.fireplace {
+  background: var(--bt-bg);
+}
+
+.chosenSound svg path {
+  fill: #FFFFFF;
+}
+
+.chosenSound {
+  background: var(--bt-bg-2);
+}
+
+.chosenControls svg path {
+  fill: #FFFFFF;
+}
+  
+#timer {
+  margin-right: 19.2rem;
+  margin-bottom: 4.8rem;
+
+  align-self: center;
+  
+}
+
+#timer .time {
+  display: flex;
+  font-size: 12rem;
+  
+
+}
+
+#controls {
+  display: flex;
+  gap: 4rem;
+
+}
+
+#controls button svg {
+  width: 4.8rem;
+  height: 4.8rem;;
+}
+
+#mood {
+  display: grid;
+  grid-template-areas: "A B" "C D";
+  gap: 3.2rem;
+
+
+}
+
+#mood button svg {
+  width: 4rem;
+  height: 5rem;
+
+}
